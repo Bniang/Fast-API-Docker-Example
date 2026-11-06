@@ -32,7 +32,7 @@ steps:
 # 4. Run the tests
   - name: Run test with pytest
     run: | 
-        pytest
+        pytest 
 
 
 
