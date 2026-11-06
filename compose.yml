@@ -4,7 +4,7 @@ services:
   web:
     build: .
     ports:
-      - 8081:80 # Runnin on port 8081 -> localhost:8081/hits
+      - 8000:8000 # Runnin on port 8000 -> localhost:8000/hits
     volumes:
       - .:/app # If you change the code, it's live reloading the project
       - application-logs:/app/logs/ # Connection with persistent volume defined line 31
@@ -27,7 +27,7 @@ networks:
   my-network:
     driver: bridge # https://docs.docker.com/engine/network/drivers/
 
+
 volumes:
   application-logs:
   redis-data:
-
